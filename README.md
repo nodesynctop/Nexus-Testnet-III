@@ -33,9 +33,9 @@ Check status:
 ```
 sudo systemctl status nexus
 ```
-Check logs:
-![nexus3_1](https://github.com/user-attachments/assets/964b6c7f-c249-4e04-a311-b55085437ac3)
+![nexus3_2](https://github.com/user-attachments/assets/31d8c1b0-5eb2-4c4b-b5d5-af2858d7d5f1)
 
+Check logs:
 ```
 journalctl -fu nexus -o cat
 ```
