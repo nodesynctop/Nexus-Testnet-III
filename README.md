@@ -16,6 +16,8 @@ Copy your Node ID (a numeric value like 345677)
 
 ### 2. 🛠️ Run the Setup Script
 On your server, run the following command to automatically install and configure the CLI node:
+![nexus3](https://github.com/user-attachments/assets/13ded2db-152c-43fb-b818-6f0efd9c6266)
+
 #### Option 1: Run directly via curl + bash
 ```
 bash <(curl -s https://raw.githubusercontent.com/nodesynctop/Nexus-Testnet-III/refs/heads/main/nexus_setup.sh)
@@ -32,6 +34,8 @@ Check status:
 sudo systemctl status nexus
 ```
 Check logs:
+![nexus3_1](https://github.com/user-attachments/assets/964b6c7f-c249-4e04-a311-b55085437ac3)
+
 ```
 journalctl -fu nexus -o cat
 ```
