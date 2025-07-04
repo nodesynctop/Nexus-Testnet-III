@@ -39,7 +39,7 @@ Check logs:
 ```
 journalctl -fu nexus -o cat
 ```
-### 4. Upgrade 
+### 4. Upgrade VERSION=v0.9.0
 ```
 sudo systemctl stop nexus
 cd $HOME/nexus-cli/clients/cli
