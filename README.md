@@ -39,7 +39,22 @@ Check logs:
 ```
 journalctl -fu nexus -o cat
 ```
-### 4. Remove Nexus Node
+### 4. Upgrade 
+```
+sudo systemctl stop nexus
+cd $HOME/nexus-cli/clients/cli
+VERSION=v0.9.0
+git fetch --all
+git checkout $VERSION
+cargo build --release
+
+sudo mv target/release/nexus-network /usr/local/bin/
+nexus-network --version
+
+sudo systemctl restart nexus
+journalctl -fu nexus -o cat
+```
+### 5. Remove Nexus Node
 ```
 sudo systemctl stop nexus
 sudo systemctl disable nexus
